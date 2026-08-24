@@ -1,0 +1,370 @@
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #080808;
+    color: #ffffff;
+}
+
+
+/* HEADER */
+
+header {
+    width: 100%;
+    height: 75px;
+    padding: 0 8%;
+    background-color: #050505;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-bottom: 1px solid #252525;
+
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: #e50914;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #e50914;
+}
+
+
+/* HERO */
+
+.hero {
+    min-height: 700px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    padding: 180px 8% 80px;
+
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.90),
+            rgba(0, 0, 0, 0.45),
+            rgba(0, 0, 0, 0.15)
+        ),
+        url("imagens/casaled.webp");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.hero-conteudo {
+    max-width: 550px;
+}
+
+.categoria {
+    color: #e50914;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 58px;
+    line-height: 1;
+    margin-bottom: 25px;
+}
+
+.hero p {
+    color: #cccccc;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+/* BOTÕES */
+
+.botoes {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.botao,
+.botao-secundario {
+    padding: 14px 24px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.botao {
+    background-color: #e50914;
+    color: white;
+}
+
+.botao:hover {
+    background-color: #b20710;
+}
+
+.botao-secundario {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.botao-secundario:hover {
+    background-color: #cccccc;
+}
+
+
+/* SEÇÃO FILMES */
+
+.filmes {
+    padding: 80px 8%;
+}
+
+h2 {
+    font-size: 34px;
+    margin-bottom: 35px;
+}
+
+.grade-filmes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+
+/* CARD */
+
+.card {
+    background-color: #121212;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(229, 9, 20, 0.3);
+}
+
+.card img {
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-conteudo {
+    padding: 20px;
+}
+
+.card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #888888;
+    margin-bottom: 18px;
+}
+
+.card a {
+    color: #e50914;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* CLÁSSICOS */
+
+.classicos {
+    padding: 80px 8%;
+    background-color: #101010;
+}
+
+.lista-classicos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.lista-classicos div {
+    padding: 30px;
+    background-color: #181818;
+    border-left: 4px solid #e50914;
+}
+
+.lista-classicos span {
+    color: #e50914;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.lista-classicos h3 {
+    margin: 15px 0 10px;
+    font-size: 22px;
+}
+
+.lista-classicos p {
+    color: #999999;
+    line-height: 1.5;
+}
+
+
+/* CONTATO */
+
+.contato {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.contato > p {
+    color: #999999;
+    margin-bottom: 30px;
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 15px;
+
+    background-color: #151515;
+    border: 1px solid #333333;
+    border-radius: 4px;
+
+    color: white;
+    font-size: 15px;
+}
+
+textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+button {
+    padding: 15px;
+
+    background-color: #e50914;
+    color: white;
+
+    border: none;
+    border-radius: 4px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #b20710;
+}
+
+
+/* FOOTER */
+
+footer {
+    padding: 35px 8%;
+    background-color: #050505;
+    text-align: center;
+
+    color: #666666;
+    line-height: 1.8;
+}
+
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 900px) {
+
+    .grade-filmes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .lista-classicos {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    header {
+        height: auto;
+        padding: 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        padding: 180px 20px 80px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .filmes,
+    .classicos,
+    .contato {
+        padding: 60px 20px;
+    }
+
+    .grade-filmes {
+        grid-template-columns: 1fr;
+    }
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
