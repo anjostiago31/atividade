@@ -11,7 +11,6 @@ html {
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
     background-color: #080808;
     color: #ffffff;
 }
@@ -89,6 +88,11 @@ nav a:hover {
 }
 .hero-conteudo {
     max-width: 550px;
+}
+
+.hero-conteudo p {
+    text-align: justify;
+    line-height: 1.6;
 }
 
 .categoria {
@@ -367,4 +371,50 @@ footer {
 
 body {
     font-family: 'Poppins', sans-serif;
+}
+
+.saiba-mais {
+    margin-top: 40px;
+}
+
+.saiba-mais h3 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.saiba-mais p {
+    text-align: justify;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.saiba-mais summary {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #b30000;
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    list-style: none;
+    transition: 0.3s;
+}
+
+.saiba-mais summary:hover {
+    background-color: #e00000;
+    transform: scale(1.05);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Cinzel', serif;
+}
+
+.saiba-mais summary {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
 }
