@@ -417,3 +417,12 @@ h1, h2, h3 {
     font-size: 18px;
     letter-spacing: 1px;
 }
+
+.introducao {
+    margin-top: 25px;
+    margin-bottom: 35px;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    line-height: 1.7;
+}
